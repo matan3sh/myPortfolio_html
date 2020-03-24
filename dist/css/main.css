@@ -288,6 +288,6 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .nav-link {
-    bottom: 75px; }
+    bottom: 50px; }
   .projects {
     grid-template-columns: 1fr; } }
