@@ -184,17 +184,51 @@ main {
     padding: 0.5rem;
     border-bottom: #8b4747 5px solid; }
 
-.projects {
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem; }
+
+.card {
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #8b4747;
-      transition: all 0.5s ease-out; }
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  background: rgba(245, 244, 244, 0.5);
+  margin-bottom: 1.5rem; }
+  .card p {
+    color: #444;
+    text-decoration: none; }
+
+.card h3 {
+  color: #8b4747;
+  font-weight: bolder;
+  margin-bottom: 0.5rem; }
+
+.card img {
+  height: 310px;
+  width: 100%; }
+  .card img:hover {
+    opacity: 0.5;
+    border-color: #8b4747;
+    transition: all 0.5s ease-out; }
+
+.card > div {
+  padding: 1.5rem; }
+
+.card:nth-child(even) img {
+  order: 2; }
+
+.btn-src {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer; }
+
+.btn-src:hover {
+  background: #8b4747; }
 
 main#contact {
   /* Form Styles */
@@ -332,9 +366,14 @@ main#contact {
     main #home h1 {
       margin-top: 10vh; }
     main .lg-heading {
-      margin-top: 1rem;
+      margin-top: 3.3rem;
       font-size: 5rem; }
   .nav-link {
     bottom: 50px; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .card {
+    display: block; }
+  .btn-src {
+    width: 82px;
+    font-size: 11px; } }

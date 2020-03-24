@@ -77,7 +77,7 @@
     }
 
     .lg-heading {
-      margin-top: 1rem;
+      margin-top: 3.3rem;
       font-size: 5rem;
     }
   }
@@ -88,5 +88,14 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .card {
+    display: block;
+  }
+
+  .btn-src {
+    width: 82px;
+    font-size: 11px;
   }
 }
