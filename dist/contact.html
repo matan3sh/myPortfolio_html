@@ -64,7 +64,7 @@
 
     <main id="contact">
       <div class="container">
-        <h1 class="brand"><span>Send Me </span>a Message</h1>
+        <h1 class="brand"><span>Lets </span>Contact</h1>
         <div class="wrapper animated bounceInLeft">
           <div class="company-info">
             <ul>
@@ -75,7 +75,7 @@
           </div>
           <div class="contact">
             <h3>Email</h3>
-            <form>
+            <form action="POST" data-netlify="true">
               <p>
                 <label>Name</label>
                 <input type="text" name="name" />
@@ -96,6 +96,9 @@
                 <label>Message</label>
                 <textarea name="message" rows="5"></textarea>
               </p>
+              <div class="full">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
               <p class="full">
                 <button>Submit</button>
               </p>
