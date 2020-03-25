@@ -10,6 +10,15 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .card {
+    display: block;
+  }
+
+  .btn-src {
+    width: 82px;
+    font-size: 11px;
+  }
 }
 
 // Tablets & Small Laptops
@@ -66,6 +75,20 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .card {
+    display: block;
+  }
+
+  .card img {
+    height: 250px;
+    width: 100%;
+  }
+
+  .btn-src {
+    width: 82px;
+    font-size: 11px;
+  }
 }
 
 // Smartphones
@@ -92,6 +115,11 @@
 
   .card {
     display: block;
+  }
+
+  .card img {
+    height: 250px;
+    width: 100%;
   }
 
   .btn-src {

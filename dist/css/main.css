@@ -194,7 +194,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  background: rgba(245, 244, 244, 0.5);
+  background: #fff;
   margin-bottom: 1.5rem; }
   .card p {
     color: #444;
@@ -326,7 +326,12 @@ main#contact {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .card {
+    display: block; }
+  .btn-src {
+    width: 82px;
+    font-size: 11px; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -358,7 +363,15 @@ main#contact {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .card {
+    display: block; }
+  .card img {
+    height: 250px;
+    width: 100%; }
+  .btn-src {
+    width: 82px;
+    font-size: 11px; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -374,6 +387,9 @@ main#contact {
     grid-template-columns: 1fr; }
   .card {
     display: block; }
+  .card img {
+    height: 250px;
+    width: 100%; }
   .btn-src {
     width: 82px;
     font-size: 11px; } }
