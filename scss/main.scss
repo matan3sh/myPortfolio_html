@@ -127,6 +127,7 @@ main {
   grid-gap: 2rem;
   background: #fff;
   margin-bottom: 1.5rem;
+  border-bottom: $secondary-color 5px solid;
 
   p {
     color: $primary-color;
