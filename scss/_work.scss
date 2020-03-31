@@ -1,0 +1,59 @@
+// Work Page
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  background: #fff;
+  margin-bottom: 1.5rem;
+  border-bottom: $secondary-color 5px solid;
+
+  p {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+.card h3 {
+  color: $secondary-color;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+.card img {
+  height: 310px;
+  width: 100%;
+
+  &:hover {
+    opacity: 0.5;
+    border-color: $secondary-color;
+    @include easeOut;
+  }
+}
+
+.card > div {
+  padding: 1.5rem;
+}
+
+.card:nth-child(even) img {
+  order: 2;
+}
+
+.btn-src {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.btn-src:hover {
+  background: $secondary-color;
+}

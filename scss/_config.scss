@@ -1,5 +1,10 @@
 $primary-color: #444;
 $secondary-color: #8b4747;
+$gradient-color: linear-gradient(
+  to right bottom,
+  rgba(255, 119, 48, 0.8),
+  rgba(255, 185, 0, 0.8)
+);
 $show-home-image: true;
 $home-image: url(../img/bg.jpg);
 $background-opacity: 0.9;
